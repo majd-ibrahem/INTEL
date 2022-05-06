@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color:rgb(43, 108, 184);
+    --secondary-color: rgb(236, 236, 236); 
+}
+
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 1.6;
+    color: #444;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* Navbar */
+.navbar{
+    height: 70px;
+    background: #fff;
+}
+
+.nav-left{
+    width: 85%;
+    height: 100%;
+}
+
+.navbar img{
+    background: var(--primary-color);
+    width: 13%;
+    height: 100%;
+    padding: 0 5px;
+    margin-right: 15px;
+}
+
+ul{
+    width: 100%;
+}
+
+.navbar ul li{
+    padding: 2px 5px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar i{
+    font-size: 1.6rem;
+}
+
+.nav-right{
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-right .language{
+    justify-content: space-evenly;
+    width: 35%;
+    font-size: .8rem;
+    padding-right: 20px;
+}
+
+.nav-right .language i{
+    margin-right: 10px;
+}
+
+.nav-right .search{
+    background: var(--secondary-color);
+    height: 100%;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.nav-right .search i{
+    color: var(--primary-color);
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.nav-right .search span{
+    color: #000;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* Showcase */
+.showcase{
+    position: relative;
+    height: 63vh;
+}
+
+.showcase .wrapper{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,
+     rgb(1, 0, 19),
+     rgb(8, 4, 53), 
+     rgb(18, 12, 92),
+     rgb(150, 157, 255),
+     rgb(228, 225, 255),
+     rgb(228, 225, 255));
+}
+
+.showcase .content{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase .square{
+    background: rgb(41, 171, 246);
+    transform: translateY(50%);
+    padding: 22px;
+    align-self: flex-end;
+}
+
+.showcase .card{
+    width: 40%;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 40px 70px 40px 35px;
+}
+
+.showcase .card h1{
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.showcase .card p{
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+
+.showcase .card .btn{
+    background: #fff;
+    padding: 10px 20px;
+}
+
+.showcase .card .btn i{
+    margin-left: 10px;
+}
+
+
+.showcase .content .image{
+    width: 48.5%;
+}
+
+
+
+/* Section Two */
+.section-two{
+    margin-top: 130px;
+    margin-bottom: 80px;
+    font-size: 1.2rem;
+}
+
+.section-two .container{
+    width: 80%;
+}
+
+.section-two .boxes{
+    justify-content: space-around;
+}
+
+.section-two a{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.section-two i{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+
+
+
+/* Section-Three */
+
+.section-three{
+    width: 90%;
+    margin: auto;
+}
+
+
+/* .section-three .cards .box-no-gap .card .card-text{
+    max-width: 100%;
+} */
+
+.section-three h2{
+    color: var(--primary-color);
+}
+
+.section-three .box-no-gap{
+    background: var(--secondary-color);
+    padding: 30px;
+    width: 100%;
+    display: grid;
+    row-gap: 30px;
+}
+
+.section-three .box-gap{
+    display: grid;
+    row-gap: 35px;
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+.section-three .box-gap img{
+    height: 100%;
+}
+
+.section-three .box-gap h2{
+    margin-top: 40px;
+}
+
+.section-three .card{
+    background: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 450px 500px;
+    column-gap: 30px;
+    max-width: 100%;
+}
+
+.section-three .first-card{
+   display: grid;
+   grid-template-columns: 1.5fr 1fr;
+   grid-gap: 40px;
+}
+
+.section-three .card:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+
+
+
+/* Footer */
+footer{
+    margin-top: 50px;
+    height: 500px;
+    background: var(--secondary-color);
+}
+
+footer .wrapper{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2.5fr 25fr;
+    align-items: center;
+    gap: 60px;
+}
+
+footer .wrapper .ULS{
+    justify-content: center;
+}
+
+footer .first-ul{
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .first-ul li{
+    margin: 0 20px;
+    font-size: 19px;
+    font-weight: 600; 
+}
+
+footer .second-ul{
+    margin-bottom: 40px;
+}
+
+footer .second-ul li{
+    font-size: 2rem;
+    padding: 3px;
+    margin: 0 12px;
+}
+
+footer .second-ul li:hover a{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+footer .third-ul{
+    margin-bottom: 40px;
+}
+
+footer .third-ul li{
+    padding: 0 7px;
+    margin: 0 2px;
+    border-right: 1px solid #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer .first-ul li:hover a,
+footer .third-ul li:hover a{
+    border-bottom: 2px solid #000;
+}
+
+footer .wrapper .ULS a{
+    color: #000;
+}
+
+/* Utilities */
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+/* @media(max-width:1200px)
+{
+    body{
+        background: green;
+        width: 100%;
+    }
+
+    .navbar ul li{
+        font-size: 15px;
+    }
+
+    .navbar .language{
+        padding-right: 0;
+        width: 20%;
+    }
+
+    .navbar .language span{
+        display: none;
+    }
+
+    .navbar .search{
+        width: 55%;
+    }
+
+    .showcase .wrapper{
+        height: 80vh;
+    }
+
+    .showcase .square{
+        display: none;
+    }
+
+    .showcase .content{
+        height: 100%;
+        flex-direction: row;
+    }
+
+    .showcase .card{
+        padding-right: 5px;
+        width: 450px;
+        height: 340px;
+        align-self: flex-start;
+    }
+
+    .showcase img{
+        align-self: flex-end;
+        width: 400px;
+        height: 300px;
+    }
+
+    .section-two{
+        margin-top: 170px;
+    }
+
+} */

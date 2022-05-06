@@ -1,0 +1,25 @@
+
+<!-- saved from url=(0136)https://www.intel.com/etc.clientlibs/settings/wcm/designs/intel/clientlibs/pages/commons-page/resources/html/idamFormStaticSimplify.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="noindex">
+</head><body><form action="https://www.intel.com/etc.clientlibs/settings/wcm/designs/intel/clientlibs/pages/commons-page/resources/html/idamFormStaticSimplify.html#" method="post" name="itcForm_frame">
+	<input type="text" name="userid">
+	<input type="text" name="password">
+	<input type="hidden" name="callBack" value="">
+</form>
+<script>
+	if (location.search.indexOf('?jsonResponse=') > -1 || location.search.indexOf('&jsonResponse=') > -1)
+	{
+		var assoc  = {};
+		var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+		var queryString = location.search.substring(1);
+		var keyValues = queryString.split('&');
+		for(var i in keyValues) {
+			var key = keyValues[i].split('=');
+			if (key.length > 1) {
+				assoc[decode(key[0])] = decode(key[1]);
+			}
+		}
+		window.parent.intel.signinsimplify.callBack(assoc['jsonResponse']);
+	}
+</script>
+</body></html>
